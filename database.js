@@ -6,10 +6,10 @@ var pool = null;
 
 exports.conectar = function(done){
 	pool = mysql.createPool({
-		host:'ip del servidor de bd',
-		user:'usuario de bd',
-		password:'password del usuario',
-		database:'bd a la que me conecto'
+		host:'programacion-web-test.cejfwltsp021.sa-east-1.rds.amazonaws.com',
+		user:'damanzano',
+		password:'4TohsakaRin',
+		database:'aplicacion_social'
 	});
 	
 	done(false);

@@ -24,8 +24,8 @@ app.use(multer({dest:'./uploads/'}).single('archivo'));
 var photoRouter = require('./routes/photo-router');
 app.use('/photos', photoRouter.getRoutes());
 
-var userRouter = require('./routes/user-router');
-app.use('/userd', userRouter.getRoutes());
+//var userRouter = require('./routes/user-router');
+//app.use('/userd', userRouter.getRoutes());
 
 // configurar recursos públicos
 app.use(express.static(__dirname +'/public'))
